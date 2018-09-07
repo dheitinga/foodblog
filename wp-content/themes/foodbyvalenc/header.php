@@ -1,20 +1,20 @@
 <!-- header -->
 <header class="header clear" role="banner">
-
-		<!-- logo -->
-		<div class="logo">
-			<a href="<?php echo home_url(); ?>">
-				<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-				<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-			</a>
+	<div class="container-fluid d-flex">
+		<div class="intro">
+			<h1>
+				Hoi! Ik ben Valencia <br />
+				Lorem, ipsum <br />
+				& dolor <br />
+			</h1>
 		</div>
-		<!-- /logo -->
-
-		<!-- nav -->
-		<nav class="nav" role="navigation">
-			<?php html5blank_nav(); ?>
-		</nav>
-		<!-- /nav -->
-
+	</div>
 </header>
 <!-- /header -->
+
+
+<!-- nav -->
+<!-- <nav class="nav" role="navigation">
+	<?php //html5blank_nav(); ?>
+</nav> -->
+<!-- /nav -->

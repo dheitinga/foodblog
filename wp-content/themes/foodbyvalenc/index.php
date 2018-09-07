@@ -29,23 +29,16 @@
 			<?php get_header(); ?>
 
 				<main role="main">
-					<!-- section -->
-					<section>
+					<?php get_template_part( 'partials/loop' ); ?>
 
-						<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
-
-						<?php get_template_part( 'partials/loop' ); ?>
-
-						<?php get_template_part( 'partials/pagination' ); ?>
-
-					</section>
-					<!-- /section -->
+					<?php //get_template_part( 'partials/pagination' ); ?>
 				</main>
 
-			<?php get_footer(); ?>
+			<?php //get_footer(); ?>
 		</div>
 		<!-- /wrapper -->
 
+		<div id="particles-js"></div>
 		<?php wp_footer(); ?>
 	</body>
 </html>

@@ -91,6 +91,9 @@ function html5blank_nav()
 function html5blank_header_scripts()
 {
   if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
+    wp_register_script('conditionizr', 'https://code.jquery.com/jquery-3.3.1.min.js', array('jquery'), '3.3.1'); // Bootstrap
+    wp_enqueue_script('bootstrap'); // Enqueue it!
+
     wp_register_script('conditionizr', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '4.1.3'); // Bootstrap
     wp_enqueue_script('bootstrap'); // Enqueue it!
 
@@ -100,7 +103,16 @@ function html5blank_header_scripts()
     wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
     wp_enqueue_script('modernizr'); // Enqueue it!
 
-    wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+    wp_register_script('minigrid', 'https://unpkg.com/minigrid@3.1.1/dist/minigrid.min.js'); // Custom scripts
+    wp_enqueue_script('minigrid'); // Enqueue it!
+
+    wp_register_script('imagesloaded', get_template_directory_uri() . '/js/lib/imagesloaded.pkgd.min.js'); // Custom scripts
+    wp_enqueue_script('imagesloaded'); // Enqueue it!
+
+    wp_register_script('particle', get_template_directory_uri() . '/js/particles.min.js', array(), '1.0.0'); // Custom scripts
+    wp_enqueue_script('particle'); // Enqueue it!
+
+    wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js'); // Custom scripts
     wp_enqueue_script('html5blankscripts'); // Enqueue it!
   }
 }
@@ -118,7 +130,7 @@ function html5blank_conditional_scripts()
 function html5blank_styles()
 {
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0', 'all');
-    wp_enqueue_style('html5blank'); // Enqueue it!
+    wp_enqueue_style('bootstrap'); // Enqueue it!
 
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.min.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
