@@ -28,13 +28,13 @@
 		<div class="wrapper">
 			<?php get_header(); ?>
 
-				<main role="main">
+				<main class="fade-in" role="main">
 					<?php get_template_part( 'partials/loop' ); ?>
 
 					<?php //get_template_part( 'partials/pagination' ); ?>
 				</main>
 
-			<?php //get_footer(); ?>
+			<?php get_footer(); ?>
 		</div>
 		<!-- /wrapper -->
 

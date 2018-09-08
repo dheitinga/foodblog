@@ -17,11 +17,30 @@ h1 {
 .header .intro h1 {
   font-size: 55px;
 }
+.header .intro h1 > span {
+  color: #FFC9C9;
+}
+.footer-big,
+.footer-small {
+  color: #fff;
+}
+.footer-big {
+  background-color: #FFD9D9;
+  height: 500px;
+}
+.footer-small {
+  background-color: #FFC9C9;
+  padding: 20px 0;
+}
+.footer-small > p {
+  margin: 0;
+}
 .grid {
-  padding: 0 120px;
+  padding: 0 140px;
+  margin-bottom: 140px;
 }
 .grid > .grid-item {
-  padding: 0 60px;
+  padding: 0 70px;
 }
 .grid > .grid-item .post-thumb {
   margin: 0;

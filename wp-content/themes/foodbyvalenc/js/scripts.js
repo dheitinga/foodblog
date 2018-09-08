@@ -4,6 +4,8 @@
 
 		'use strict';
 
+		$('.fade-in').addClass('fade-in--finished');
+
 		particlesJS("particles-js", {
 		  particles: {
 		    number: { value: 25, density: { enable: true, value_area: 800 } },
