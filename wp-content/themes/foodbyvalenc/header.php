@@ -3,9 +3,9 @@
 	<div class="container-fluid d-flex">
 		<div class="intro">
 			<h1>
-				Hoi! Ik ben <span>Valencia</span> en <br />
-				Mijn passie is eten <br />
-				& koken <br />
+				Hoi! Ik ben <span>Valencia</span> & <br />
+				mijn passie is eten <br />
+				en koken <br />
 			</h1>
 		</div>
 	</div>

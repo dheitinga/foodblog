@@ -10,6 +10,7 @@
 		  particles: {
 		    number: { value: 25, density: { enable: true, value_area: 800 } },
 		    color: { value: "#FFC9C9" },
+				// color: { value: "#7F0505" },
 		    shape: {
 		      type: "circle",
 		      stroke: { width: 0, color: "#000000" },
