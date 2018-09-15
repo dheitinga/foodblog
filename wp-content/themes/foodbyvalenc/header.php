@@ -2,11 +2,17 @@
 <header class="header clear" role="banner">
 	<div class="container-fluid d-flex">
 		<div class="intro">
-			<h1>
-				Hoi! Ik ben <span>Valencia</span> & <br />
-				mijn passie is eten <br />
-				en koken <br />
-			</h1>
+			<?php if (is_home()): ?>
+				<h1>
+					Hoi! Ik ben <span>Valencia</span> & <br />
+					mijn passie is eten <br />
+					en koken <br />
+				</h1>
+			<?php else: ?>
+				<h1>
+					<?php echo the_title(); ?>
+				</h1>
+			<?php endif; ?>
 		</div>
 	</div>
 </header>

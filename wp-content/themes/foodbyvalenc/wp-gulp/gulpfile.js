@@ -9,7 +9,7 @@ gulp.task('compile-less', function() {
       console.log(err.toString());
       this.emit('end');
     })
-    .pipe(gulp.dest('../css'));
+    .pipe(gulp.dest('../'));
 });
 
 /* Task to watch less changes */

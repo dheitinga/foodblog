@@ -1,12 +1,39 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+main {
+  margin-bottom: 140px;
+}
+.form-control--sub {
+  width: 40%;
+}
 @font-face {
   font-family: 'Domine';
   font-style: normal;
   font-weight: 400;
   src: local('Domine'), local('Domine-Regular'), url(https://fonts.gstatic.com/s/domine/v5/L0x8DFMnlVwD4h3hu_qi.ttf) format('truetype');
 }
-*,
-h1 {
+* {
   font-family: 'Domine', serif;
+}
+p {
+  font-size: 13px;
+}
+.cust-btn {
+  padding: 6px 12px;
+}
+.cust-btn--white {
+  background-color: #fff;
+  box-shadow: none;
 }
 .header {
   padding: 175px 0 ;
@@ -20,13 +47,12 @@ h1 {
 .header .intro h1 > span {
   color: #FFC9C9;
 }
-.footer-big,
-.footer-small {
+.footer {
   color: #fff;
 }
 .footer-big {
   background-color: #FFD9D9;
-  height: 500px;
+  padding: 100px 0;
 }
 .footer-small {
   background-color: #FFC9C9;
@@ -35,9 +61,15 @@ h1 {
 .footer-small > p {
   margin: 0;
 }
+.footer h1,
+.footer a {
+  color: #ffafaf;
+}
+.footer a:hover {
+  color: #FFC9C9;
+}
 .grid {
   padding: 0 140px;
-  margin-bottom: 140px;
 }
 .grid > .grid-item {
   padding: 0 70px;
@@ -55,18 +87,6 @@ h1 {
   text-decoration: none;
   color: #FFC9C9;
 }
-/*
-	Theme Name: HTML5 Blank
-	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
-	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
-	Author URI: http://toddmotto.com
-	Tags: Blank, HTML5, CSS3
-
-	License: MIT
-	License URI: http://opensource.org/licenses/mit-license.php
-*/
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/

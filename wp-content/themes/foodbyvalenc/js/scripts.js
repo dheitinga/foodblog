@@ -4,7 +4,7 @@
 
 		'use strict';
 
-		$('.fade-in').addClass('fade-in--finished');
+		//$('.fade-in').addClass('fade-in--finished');
 
 		particlesJS("particles-js", {
 		  particles: {
@@ -69,7 +69,7 @@
 		});
 
 		$('.grid').imagesLoaded( function() {
-		  grid.mount();
+			grid.mount();
 		});
 
 	});

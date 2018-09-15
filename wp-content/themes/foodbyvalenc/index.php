@@ -1,3 +1,22 @@
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage foodbyvalenc
+ * @since 1.0
+ * @version 1.0
+ */
+
+?>
+
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
@@ -26,15 +45,11 @@
 
 		<!-- wrapper -->
 		<div class="wrapper">
-			<?php get_header(); ?>
-
-				<main class="fade-in" role="main">
-					<?php get_template_part( 'partials/loop' ); ?>
-
-					<?php //get_template_part( 'partials/pagination' ); ?>
-				</main>
-
-			<?php get_footer(); ?>
+			<?php
+				get_header();
+				get_template_part( 'partials/loop' );
+				get_footer();
+			?>
 		</div>
 		<!-- /wrapper -->
 

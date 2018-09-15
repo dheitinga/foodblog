@@ -1,4 +1,4 @@
-<section class="post-thumbs">
+<main class="post-thumbs">
 	<div class="grid">
 		<?php
 			$count = 0;
@@ -57,6 +57,8 @@
 
 		<?php endwhile; ?>
 
+		<?php //get_template_part( 'partials/pagination' ); ?>
+
 		<?php else: ?>
 
 			<div class="col-lg-12">
@@ -69,4 +71,4 @@
 
 		<?php endif; ?>
 	</div>
-</section>
+</main>

@@ -1,12 +1,9 @@
 .footer {
-  &-big,
-  &-small {
-    color: @white;
-  }
+  color: @white;
 
   &-big {
     background-color: @primary-light;
-    height: 500px;
+    padding: 100px 0;
   }
 
   &-small {
@@ -15,6 +12,17 @@
 
     > p {
       margin: 0;
+    }
+  }
+
+  h1,
+  a {
+    color: darken(@primary, 5);
+  }
+
+  a {
+    &:hover{
+      color: @primary;
     }
   }
 }
