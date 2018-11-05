@@ -74,6 +74,9 @@ p {
 .footer .comment-body {
   margin-bottom: 15px;
 }
+.footer .comment-meta {
+  margin-bottom: 2rem;
+}
 .footer form {
   margin-bottom: 45px;
 }
