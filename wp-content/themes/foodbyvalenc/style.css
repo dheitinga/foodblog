@@ -48,7 +48,7 @@ p {
   color: #FFC9C9;
 }
 .footer {
-  color: #fff;
+  color: #B28686;
 }
 .footer-big {
   background-color: #FFD9D9;
@@ -63,10 +63,13 @@ p {
 }
 .footer h1,
 .footer a {
-  color: #ffafaf;
+  color: white;
+}
+.footer a {
+  text-shadow: 0.5px 0.5px #ffc9c9;
 }
 .footer a:hover {
-  color: #FFC9C9;
+  color: #e6e6e6;
 }
 .grid {
   padding: 0 140px;
