@@ -71,6 +71,12 @@ p {
 .footer a:hover {
   color: #e6e6e6;
 }
+.footer .comment-body {
+  margin-bottom: 15px;
+}
+.footer form {
+  margin-bottom: 45px;
+}
 .grid {
   padding: 0 140px;
 }

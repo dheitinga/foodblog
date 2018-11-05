@@ -29,7 +29,6 @@
 	?>
 
 	<?php if (have_comments()) : ?>
-		<br />
 		<h2><?php comments_number(); ?></h2>
 		<br />
 
