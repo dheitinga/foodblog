@@ -10,6 +10,12 @@
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
 */
+html,
+body,
+main {
+  max-width: 100%;
+  width: 100%;
+}
 main {
   margin-bottom: 140px;
 }
@@ -20,7 +26,7 @@ main {
   font-family: 'Domine';
   font-style: normal;
   font-weight: 400;
-  src: local('Domine'), local('Domine-Regular'), url(https://fonts.gstatic.com/s/domine/v5/L0x8DFMnlVwD4h3hu_qi.ttf) format('truetype');
+  src: local('Domine'), local('Domine-Regular'), url(https://fonts.gstatic.com/s/domine/v6/L0x8DFMnlVwD4h3hu_qi.ttf) format('truetype');
 }
 * {
   font-family: 'Domine', serif;
@@ -193,10 +199,12 @@ p {
     padding: 0 30px;
   }
 }
+article > p {
+  margin-bottom: 2rem;
+}
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
-/* global box-sizing */
 *,
 *:after,
 *:before {
@@ -206,7 +214,6 @@ p {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-/* html element 62.5% font-size for REM use */
 html {
   font-size: 62.5%;
 }
@@ -214,7 +221,6 @@ body {
   font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #444;
 }
-/* clear */
 .clear:before,
 .clear:after {
   content: ' ';
