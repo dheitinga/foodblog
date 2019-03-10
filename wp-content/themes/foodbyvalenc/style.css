@@ -204,7 +204,8 @@ article > h3,
 article > h4 {
   margin-bottom: 2rem;
 }
-article > p {
+article > p,
+article > ul > li {
   font-size: 1.5rem;
 }
 article > h2 {
