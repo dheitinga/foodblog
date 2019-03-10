@@ -3,7 +3,7 @@
 	<div class="container-fluid">
 		<div class="row justify-content-center intro">
 			<?php if (is_home()): ?>
-				<h1 class="text-center">
+				<h1>
 					Hoi! Ik ben <span>Valencia</span>, <br />
 					mijn passies zijn eten <br />
 					en koken <br />
