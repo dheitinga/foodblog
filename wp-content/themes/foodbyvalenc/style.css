@@ -53,24 +53,24 @@ p {
   margin: 0px auto;
 }
 .header .intro h1 {
-  font-size: 5em;
+  font-size: 3em;
 }
 .header .intro h1 > span {
   color: #FFC9C9;
 }
 @media (min-width: 576px) {
   .header .intro h1 {
-    font-size: 6em;
+    font-size: 4em;
   }
 }
 @media (min-width: 768px) {
   .header .intro h1 {
-    font-size: 7em;
+    font-size: 5em;
   }
 }
 @media (min-width: 992px) {
   .header .intro h1 {
-    font-size: 8em;
+    font-size: 6.5em;
   }
 }
 .footer-big {
