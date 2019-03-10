@@ -80,6 +80,7 @@
 		</div>
 		<!-- /wrapper -->
 
+		<a href="/" class="fixed-topleft"><i class="fa fa-home" aria-hidden="true"></i></a>
 		<div id="particles-js"></div>
 		<?php wp_footer(); ?>
 	</body>
