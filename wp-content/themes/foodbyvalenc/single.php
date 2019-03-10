@@ -50,7 +50,7 @@
 			<main role="main">
 				<div class="container-fluid">
 					<div class="row justify-content-center">
-						<div class="col-xl-8 col-lg-8 col-md-10">
+						<div class="col-lg-8 col-10">
 							<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 								<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 									<?php if ( has_post_thumbnail()) : ?>
