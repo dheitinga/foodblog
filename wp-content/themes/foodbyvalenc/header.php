@@ -4,8 +4,8 @@
 		<div class="intro">
 			<?php if (is_home()): ?>
 				<h1>
-					Hoi! Ik ben <span>Valencia</span> & <br />
-					mijn passie is eten <br />
+					Hoi! Ik ben <span>Valencia</span>, <br />
+					mijn passies zijn eten <br />
 					en koken <br />
 				</h1>
 			<?php else: ?>

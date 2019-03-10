@@ -47,16 +47,6 @@
 
 					<?php endwhile; ?>
 
-					<?php else: ?>
-
-						<div class="col-lg-12">
-							<!-- article -->
-							<article>
-								<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-							</article>
-							<!-- /article -->
-						</div>
-
 					<?php endif; ?>
 				</div>	
 			</div>
