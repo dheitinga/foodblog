@@ -103,8 +103,8 @@ function html5blank_header_scripts()
     wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
     wp_enqueue_script('modernizr'); // Enqueue it!
 
-    wp_register_script('minigrid', 'https://unpkg.com/minigrid@3.1.1/dist/minigrid.min.js'); // Custom scripts
-    wp_enqueue_script('minigrid'); // Enqueue it!
+    wp_register_script('isotope', get_template_directory_uri() . '/js/isotope.pkgd.min.js'); // Custom scripts
+    wp_enqueue_script('isotope'); // Enqueue it!
 
     wp_register_script('imagesloaded', get_template_directory_uri() . '/js/lib/imagesloaded.pkgd.min.js'); // Custom scripts
     wp_enqueue_script('imagesloaded'); // Enqueue it!

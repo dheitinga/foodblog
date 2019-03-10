@@ -41,18 +41,95 @@ p {
 .header .intro {
   margin: 0px auto;
 }
-.header .intro h1 {
-  font-size: 55px;
-}
 .header .intro h1 > span {
   color: #FFC9C9;
+}
+@media (min-width: 576px) {
+  .header .intro h1 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .header .intro h1 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 992px) {
+  .header .intro h1 {
+    font-size: 55px;
+  }
 }
 .footer {
   color: #B28686;
 }
 .footer-big {
-  background-color: #FFD9D9;
+  background: #FFD9D9;
   padding: 100px 0;
+}
+.footer-big .comments a {
+  color: #ffafaf;
+  text-shadow: none;
+}
+.footer-big .comments > #respond {
+  text-align: center;
+}
+.footer-big .comments > #respond > h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.footer-big .comments > #respond > form {
+  margin-bottom: 60px;
+}
+.footer-big .comments > #respond > form > .input-group {
+  margin-bottom: 15px;
+}
+.footer-big .comments > #respond > form > .input-group > input,
+.footer-big .comments > #respond > form > .input-group > textarea {
+  border-radius: 0px;
+  border-color: #FFC9C9;
+  padding: 15px;
+  background: #ffe6e6;
+}
+.footer-big .comments > #respond > form > p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.footer-big .comments > #respond > form > .form-submit > #submit {
+  border-radius: 0;
+  border: solid 1px #FFC9C9;
+  padding: 10px 30px;
+  background-color: #FFC9C9;
+  color: #B28686;
+}
+.footer-big .comments > #respond > form > .form-submit > #submit:hover {
+  background-color: #FFD9D9;
+}
+.footer-big .comments > .comment-count {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer-big .comments > .comment .comment-body {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #ffe6e6;
+  position: relative;
+}
+.footer-big .comments > .comment .comment-body::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f3e5";
+  position: absolute;
+  text-align: center;
+  right: -40px;
+  bottom: calc(45%);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.footer-big .comments > .comment .comment-body:hover::after {
+  opacity: 1;
+}
+.footer-big .comments > .comment .comment-body > .comment-meta {
+  margin-bottom: 2rem;
 }
 .footer-small {
   background-color: #FFC9C9;
@@ -62,7 +139,7 @@ p {
   margin: 0;
 }
 .footer h1,
-.footer a {
+.footer h2 {
   color: white;
 }
 .footer a {
@@ -71,33 +148,50 @@ p {
 .footer a:hover {
   color: #e6e6e6;
 }
-.footer .comment-body {
-  margin-bottom: 15px;
-}
-.footer .comment-meta {
-  margin-bottom: 2rem;
-}
-.footer form {
-  margin-bottom: 45px;
-}
-.grid {
-  padding: 0 140px;
-}
-.grid > .grid-item {
-  padding: 0 70px;
-}
-.grid > .grid-item .post-thumb {
+.grid-padding > .grid > .grid-item > .grid-item--content .post-thumb {
   margin: 0;
   margin-bottom: 90px;
 }
-.grid > .grid-item .post-thumb .post-thumb-content > p,
-.grid > .grid-item .post-thumb .post-thumb-content > h2 {
+.grid-padding > .grid > .grid-item > .grid-item--content .post-thumb .post-thumb-content > p,
+.grid-padding > .grid > .grid-item > .grid-item--content .post-thumb .post-thumb-content > h2 {
   margin: 0;
   margin-top: 20px;
 }
-.grid > .grid-item .post-thumb .post-thumb-content a:hover {
+.grid-padding > .grid > .grid-item > .grid-item--content .post-thumb .post-thumb-content a:hover {
   text-decoration: none;
   color: #FFC9C9;
+}
+@media (min-width: 576px) {
+  .grid-padding {
+    padding: 0 80px;
+  }
+  .grid-padding > .grid > .grid-item > .grid-item--content {
+    padding: 0 0px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-padding {
+    padding: 0 100px;
+  }
+  .grid-padding > .grid > .grid-item > .grid-item--content {
+    padding: 0 10px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-padding {
+    padding: 0 120px;
+  }
+  .grid-padding > .grid > .grid-item > .grid-item--content {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-padding {
+    padding: 0 140px;
+  }
+  .grid-padding > .grid > .grid-item > .grid-item--content {
+    padding: 0 30px;
+  }
 }
 /*------------------------------------*\
     MAIN

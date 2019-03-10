@@ -1,30 +1,86 @@
-.grid {
-  padding: 0 140px;
-  // margin-bottom: 140px;
+.grid-padding {
 
-  > .grid-item {
-    padding: 0 70px;
+  > .grid {
+    // margin-bottom: 140px;
 
-    .post-thumb {
-      margin: 0;
-      margin-bottom: 90px;
+    > .grid-item {
 
-      .post-thumb-content {
-        > p,
-        > h2 {
+      > .grid-item--content {
+
+        .post-thumb {
           margin: 0;
-          margin-top: 20px;
-        }
+          margin-bottom: 90px;
 
-        a {
+          .post-thumb-content {
+            > p,
+            > h2 {
+              margin: 0;
+              margin-top: 20px;
+            }
 
-          &:hover {
-            text-decoration: none;
-            color: @primary;
+            a {
+
+              &:hover {
+                text-decoration: none;
+                color: @primary;
+              }
+            }
           }
         }
       }
     }
+  }
+}
 
+@media (min-width: 576px) {
+  .grid-padding {
+    padding: 0 80px;
+
+    > .grid {
+      > .grid-item {
+        > .grid-item--content {
+          padding: 0 0px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .grid-padding {
+    padding: 0 100px;
+
+    > .grid {
+      > .grid-item {
+        > .grid-item--content {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .grid-padding {
+    padding: 0 120px;
+
+    > .grid {
+      > .grid-item {
+        > .grid-item--content {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .grid-padding {
+    padding: 0 140px;
+
+    > .grid {
+      > .grid-item {
+        > .grid-item--content {
+          padding: 0 30px;
+        }
+      }
+    }
   }
 }

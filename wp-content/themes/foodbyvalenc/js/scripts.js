@@ -63,13 +63,14 @@
 		  retina_detect: true
 		});
 
-		var grid = new Minigrid({
-		  container: '.grid',
-		  item: '.grid-item'
-		});
-
 		$('.grid').imagesLoaded( function() {
-			grid.mount();
+			$('.grid').isotope({
+			  percentPosition: true,
+			  itemSelector: '.grid-item',
+			  masonry: {
+			    columnWidth: '.grid-sizer'
+			  }
+			})
 		});
 
 	});
