@@ -1,29 +1,24 @@
-.grid-padding {
+.grid {
+  > .grid-item {
 
-  > .grid {
-    // margin-bottom: 140px;
+    > .grid-item--content {
 
-    > .grid-item {
+      .post-thumb {
+        margin: 0;
+        margin-bottom: 90px;
 
-      > .grid-item--content {
+        .post-thumb-content {
+          > p,
+          > h2 {
+            margin: 0;
+            margin-top: 20px;
+          }
 
-        .post-thumb {
-          margin: 0;
-          margin-bottom: 90px;
+          a {
 
-          .post-thumb-content {
-            > p,
-            > h2 {
-              margin: 0;
-              margin-top: 20px;
-            }
-
-            a {
-
-              &:hover {
-                text-decoration: none;
-                color: @primary;
-              }
+            &:hover {
+              text-decoration: none;
+              color: @primary;
             }
           }
         }
@@ -33,53 +28,37 @@
 }
 
 @media (min-width: 576px) {
-  .grid-padding {
-    padding: 0 80px;
-
-    > .grid {
-      > .grid-item {
-        > .grid-item--content {
-          padding: 0 0px;
-        }
+  .grid {
+    > .grid-item {
+      > .grid-item--content {
+        padding: 0 0px;
       }
     }
   }
 }
 @media (min-width: 768px) {
-  .grid-padding {
-    padding: 0 100px;
-
-    > .grid {
-      > .grid-item {
-        > .grid-item--content {
-          padding: 0 10px;
-        }
+  .grid {
+    > .grid-item {
+      > .grid-item--content {
+        padding: 0 10px;
       }
     }
   }
 }
 @media (min-width: 992px) {
-  .grid-padding {
-    padding: 0 120px;
-
-    > .grid {
-      > .grid-item {
-        > .grid-item--content {
-          padding: 0 20px;
-        }
+  .grid {
+    > .grid-item {
+      > .grid-item--content {
+        padding: 0 20px;
       }
     }
   }
 }
 @media (min-width: 1200px) {
-  .grid-padding {
-    padding: 0 140px;
-
-    > .grid {
-      > .grid-item {
-        > .grid-item--content {
-          padding: 0 30px;
-        }
+  .grid {
+    > .grid-item {
+      > .grid-item--content {
+        padding: 0 30px;
       }
     }
   }

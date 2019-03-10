@@ -47,26 +47,11 @@ p {
 .header .intro {
   margin: 0px auto;
 }
+.header .intro h1 {
+  font-size: 4.5vw;
+}
 .header .intro h1 > span {
   color: #FFC9C9;
-}
-@media (min-width: 576px) {
-  .header .intro h1 {
-    font-size: 35px;
-  }
-}
-@media (min-width: 768px) {
-  .header .intro h1 {
-    font-size: 45px;
-  }
-}
-@media (min-width: 992px) {
-  .header .intro h1 {
-    font-size: 55px;
-  }
-}
-.footer {
-  color: #B28686;
 }
 .footer-big {
   background: #FFD9D9;
@@ -143,9 +128,11 @@ p {
 }
 .footer-small > p {
   margin: 0;
+  color: #B28686;
 }
 .footer h1,
-.footer h2 {
+.footer h2,
+.footer a {
   color: white;
 }
 .footer a {
@@ -154,48 +141,36 @@ p {
 .footer a:hover {
   color: #e6e6e6;
 }
-.grid-padding > .grid > .grid-item > .grid-item--content .post-thumb {
+.grid > .grid-item > .grid-item--content .post-thumb {
   margin: 0;
   margin-bottom: 90px;
 }
-.grid-padding > .grid > .grid-item > .grid-item--content .post-thumb .post-thumb-content > p,
-.grid-padding > .grid > .grid-item > .grid-item--content .post-thumb .post-thumb-content > h2 {
+.grid > .grid-item > .grid-item--content .post-thumb .post-thumb-content > p,
+.grid > .grid-item > .grid-item--content .post-thumb .post-thumb-content > h2 {
   margin: 0;
   margin-top: 20px;
 }
-.grid-padding > .grid > .grid-item > .grid-item--content .post-thumb .post-thumb-content a:hover {
+.grid > .grid-item > .grid-item--content .post-thumb .post-thumb-content a:hover {
   text-decoration: none;
   color: #FFC9C9;
 }
 @media (min-width: 576px) {
-  .grid-padding {
-    padding: 0 80px;
-  }
-  .grid-padding > .grid > .grid-item > .grid-item--content {
+  .grid > .grid-item > .grid-item--content {
     padding: 0 0px;
   }
 }
 @media (min-width: 768px) {
-  .grid-padding {
-    padding: 0 100px;
-  }
-  .grid-padding > .grid > .grid-item > .grid-item--content {
+  .grid > .grid-item > .grid-item--content {
     padding: 0 10px;
   }
 }
 @media (min-width: 992px) {
-  .grid-padding {
-    padding: 0 120px;
-  }
-  .grid-padding > .grid > .grid-item > .grid-item--content {
+  .grid > .grid-item > .grid-item--content {
     padding: 0 20px;
   }
 }
 @media (min-width: 1200px) {
-  .grid-padding {
-    padding: 0 140px;
-  }
-  .grid-padding > .grid > .grid-item > .grid-item--content {
+  .grid > .grid-item > .grid-item--content {
     padding: 0 30px;
   }
 }
