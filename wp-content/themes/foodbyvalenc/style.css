@@ -53,10 +53,25 @@ p {
   margin: 0px auto;
 }
 .header .intro h1 {
-  font-size: 4.5vw;
+  font-size: 5em;
 }
 .header .intro h1 > span {
   color: #FFC9C9;
+}
+@media (min-width: 576px) {
+  .header .intro h1 {
+    font-size: 6em;
+  }
+}
+@media (min-width: 768px) {
+  .header .intro h1 {
+    font-size: 7em;
+  }
+}
+@media (min-width: 992px) {
+  .header .intro h1 {
+    font-size: 8em;
+  }
 }
 .footer-big {
   background: #FFD9D9;
@@ -179,8 +194,27 @@ p {
     padding: 0 30px;
   }
 }
-article > p {
+article > .featured {
+  display: block;
+  margin-bottom: 4rem;
+}
+article > p,
+article > h2,
+article > h3,
+article > h4 {
   margin-bottom: 2rem;
+}
+article > p {
+  font-size: 1.5rem;
+}
+article > h2 {
+  font-size: 4rem;
+}
+article > h3 {
+  font-size: 3rem;
+}
+article > h4 {
+  font-size: 2rem;
 }
 /*------------------------------------*\
     MAIN
