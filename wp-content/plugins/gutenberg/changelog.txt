@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 3.7.1 =
+
+* Deactivate plugin versions below 4.1 on WordPress 5.0. #11375
+
 = 3.7.0 =
 
 * New “Spotlight Mode” that focuses on a single block at a time and an updated “Unified Toolbar” design. Both can be combined.
